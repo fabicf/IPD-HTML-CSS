@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emma Stone</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <style>
+        .main {
+            /* border: 1px solid red; */
+            width: 1000px;
+            margin: auto;
+            font-family: 'Open Sans', sans-serif;
+            /* padding: 10px; */
+            font-size: 12px;
+        }
+
+        .main-grid-container {
+            border: 1px solid gray;
+            display: grid;
+            grid-template-columns: 200px 650px 150px;
+        }
+
+        .left-side-menu {
+            /* border: 1px solid purple; */
+            padding: 10px;
+        }
+
+        .profile-section {
+            /* border: 1px solid orange; */
+            padding: 10px;
+        }
+
+
+        /* side menu - left column styles */
+
+        .left-side-menu {
+            display: grid;
+            grid-template-rows: auto;
+
+        }
+
+        .left-menu-logo {
+            background-color: palevioletred;
+            padding: 10px;
+        }
+
+        .logo-img {
+            width: 60px;
+
+
+        }
+
+        .left-menu-friend {
+            padding: 10px;
+            background-color: black;
+
+        }
+
+        .friend-pic {
+            width: 40px;
+            border-radius: 50%;
+            /* float: left; */
+
+        }
+
+        .friend-name {
+            color: white;
+        }
+
+        .search-messages {
+            background-color: rgb(80, 80, 80);
+            color: white;
+        }
+
+        .message-items {
+            /* border: 1px solid white; */
+            display: block;
+            padding: 10px 10px;
+
+        }
+
+        .message-items>span {
+            padding: 0 20px 0 5px;
+            text-transform: uppercase;
+        }
+
+        .visited {
+            background-color: black;
+            color: white;
+            padding: 5px 5px 8px 5px;
+        }
+
+        .visited-title {
+            text-transform: uppercase;
+            padding: 5px 10px;
+        }
+
+        .grid-visited {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 5px;
+            row-gap: 5px;
+            padding: 10px;
+        }
+
+        .visited-img {
+            width: 50px;
+            border-radius: 50%;
+        }
+
+
+
+
+
+        /* profile - middle column styles */
+        .profile-section-top-grid {
+            /* border: 1px solid blue; */
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 5px;
+        }
+
+        .profile-picture>img {
+            width: 100px;
+            border: 3px solid palevioletred;
+            border-radius: 50%;
+        }
+
+        .profile-name>.emma-name {
+            font-size: 25px;
+        }
+
+        .profile-name>.emma-info {
+            font-size: 15px;
+        }
+
+        .femenin-icon {
+            color: palevioletred;
+            padding: 0 3px;
+        }
+
+        .update-button {
+            color: white;
+            background-color: palevioletred;
+            border: none;
+            padding: 8px 25px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        .profile-match-top {
+            padding: 0 5px 5px 5px;
+            text-align: right;
+        }
+
+        .profile-match-top>.percentage {
+            color: palevioletred;
+            font-size: 25px;
+        }
+
+        .profile-match-top>.match {
+            text-transform: uppercase;
+            font-size: 10px;
+            letter-spacing: 3px;
+        }
+
+        .profile-match-botton {
+            padding: 5px;
+            text-align: right;
+            color: palevioletred;
+        }
+
+        .match-icons-icons {
+            border: 1px solid palevioletred;
+            padding: 5px;
+        }
+
+
+        .profile-section-botton {
+            /* border: 1px solid green; */
+            padding: 5px;
+        }
+
+        .horizontal-menu {
+            border-bottom: 1px solid rgb(219, 219, 219);
+
+        }
+
+        .horizontal-menu>span {
+            display: inline-block;
+            /* border: 1px solid red; */
+            color: gray;
+            text-transform: uppercase;
+            font-size: 12px;
+
+            text-align: center;
+            padding: 2px 8px;
+
+
+        }
+
+        .horizontal-menu>.about-menu {
+            color: black;
+            font-weight: bold;
+            border-bottom: 2px solid palevioletred;
+        }
+
+        .profile-section-botton-grid {
+            /* border: 1px solid orange; */
+            padding: 5px;
+            display: grid;
+            /* grid-template-columns: auto auto; */
+            grid-template-columns: 60% 40%;
+        }
+
+        .myself {
+            padding-right: 20px;
+        }
+
+        .myself>p {
+            line-height: 18px;
+
+        }
+
+        .mydetails {
+            padding-left: 10px;
+        }
+
+        .mydetails-grid {
+            /* border: 1px solid blue; */
+            display: grid;
+            grid-template-columns: 40% 60%;
+        }
+
+        .mydetails-left {
+            color: gray;
+            padding: 7px 0;
+            border-bottom: 1px solid rgb(219, 219, 219);
+        }
+
+        .mydetails-right {
+            /* color: gray; */
+            padding: 7px 0;
+            border-bottom: 1px solid rgb(219, 219, 219);
+        }
+
+
+
+        /* right column styles */
+        .right-ads {
+            /* border: 1px solid red; */
+            /* display: flex;
+            flex-direction: column; */
+            /* justify-content: flex-start; */
+            display: grid;
+            grid-template-rows: auto;
+        }
+
+        .right-ads-top {
+            background-color: rgb(80, 80, 80);
+            color: white;
+            display: block;
+            padding: 10px;
+            text-align: center;
+            /* font-weight: bold; */
+            text-transform: capitalize;
+        }
+
+        .right-ads-middle {
+            background-color: black;
+            color: white;
+            display: block;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .right-ads-botton {
+            background-color: palevioletred;
+            text-align: center;
+            padding: 10px;
+            display: block;
+        }
+
+        .right-ads-botton>.p1 {
+            font-size: 20px;
+        }
+
+        .gopremium-button {
+            color: palevioletred;
+            background-color: white;
+            border: none;
+            padding: 8px 25px;
+            border-radius: 5px;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <!-- beginning main grid with 3 columns -->
+        <div class="main-grid-container">
+            <!-- beginning of left side menu -  column1 -->
+            <div class="lef-side-menu">
+                <div class="left-menu-logo">
+                    <img class="logo-img" src="logoapp.png" alt="">
+                </div>
+                <div class="left-menu-friend">
+                    <span><img class="friend-pic" src="profilepic.png" alt="pict other"></span>
+                    <span class="friend-name">Ishu Subedi</span>
+                </div>
+                <div class="search-messages">
+                    <div class="message-items">
+                        <span>search</span>
+                    </div>
+                    <div class="message-items">
+                        <span><i class="far fa-envelope"></i></span>
+                        <span> messages </span>
+                        <span><i class="fas fa-comment-alt"></i></span>
+                    </div>
+                    <div class="message-items">
+                        <span><i class="far fa-envelope"></i></span>
+                        <span> messages </span>
+                        <span><i class="fas fa-comment-alt"></i></span>
+                    </div>
+                    <div class="message-items">
+                        <span><i class="far fa-envelope"></i></span>
+                        <span> messages </span>
+                        <span><i class="fas fa-comment-alt"></i></span>
+                    </div>
+                    <div class="message-items">
+                        <span><i class="far fa-envelope"></i></span>
+                        <span> messages </span>
+                        <span><i class="fas fa-comment-alt"></i></span>
+                    </div>
+
+
+                </div>
+                <div class="visited">
+                    <div class="visited-title">Recently visited</div>
+                    <div class="grid-visited">
+                        <div>
+                            <img class="visited-img" src="profilepic.png" alt="visited">
+                        </div>
+                        <div>
+                            <img class="visited-img" src="profilepic.png" alt="visited">
+                        </div>
+                        <div>
+                            <img class="visited-img" src="profilepic.png" alt="visited">
+                        </div>
+                        <div>
+                            <img class="visited-img" src="profilepic.png" alt="visited">
+                        </div>
+                        <div>
+                            <img class="visited-img" src="profilepic.png" alt="visited">
+                        </div>
+                        <div>
+                            <img class="visited-img" src="profilepic.png" alt="visited">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- end of left side menu -->
+
+            <!-- beginning of profile section - column 2 -->
+            <div class="profile-section">
+                <!-- beginning of profile section top part -->
+                <div class="profile-section-top-grid">
+
+                    <!-- profile picture section -->
+                    <div class="profile-picture">
+                        <img src="profilepic.png" alt="profile pic">
+                    </div>
+
+                    <!-- profile name section -->
+                    <div class="profile-name">
+                        <div class="emma-name">Emma Stone</div>
+                        <div class="emma-info">
+                            <p>25 &bull; <span class="femenin-icon"><i class="fas fa-venus"></i></span> &bull;
+                                Scottdale, United
+                                States </p>
+                        </div>
+                        <div> <button class="update-button">Update Info</button></div>
+                    </div>
+
+                    <!-- 93% match section -->
+                    <div class="profile-match">
+                        <div class="profile-match-top">
+                            <span class="percentage">93%</span><br>
+                            <span class="match">match</span>
+                        </div>
+                        <div class="profile-match-botton">
+                            <span class="match-icons"><i class="fas fa-thumbs-up match-icons-icons"></i><i
+                                    class="fas fa-thumbs-up match-icons-icons"></i><i
+                                    class="fas fa-thumbs-up match-icons-icons"></i> Report</span>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end of profile section top part -->
+
+                <!-- beginning of profile section botton -->
+                <div class="profile-section-botton">
+                    <div class="horizontal-menu">
+                        <span class="about-menu">about</span>
+                        <span>photos</span>
+                        <span>questions</span>
+                    </div>
+                    <div class="profile-section-botton-grid">
+                        <div class="myself">
+                            <h4>My self-summary</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eligendi sint tempore
+                                necessitatibus dolore eveniet totam, sed hic. Suscipit ut ex tenetur expedita dolore,
+                                rerum iusto accusamus quo maiores totam.</p>
+                            <h4>My self-summary</h4>
+                            <p>Lorem ipsum dolor t. A, consequuntur.adipisicing elit. Molestiae et totam, sed hic.
+                                rerum iustomaiores totam.</p>
+                            <h4>My self-summary</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eligendi sint tempore
+                                necessitatibus ex tenetur expedita dolore,
+                                rerum iusto accusamus quo maiores totam.</p>
+                        </div>
+                        <div class="mydetails">
+                            <h4>My details</h4>
+                            <div class="mydetails-grid">
+                                <div class="mydetails-left">Last Online</div>
+                                <div class="mydetails-right">April 5</div>
+                                <div class="mydetails-left">Orientation</div>
+                                <div class="mydetails-right">Straight</div>
+                                <div class="mydetails-left">Last Online</div>
+                                <div class="mydetails-right">April 5</div>
+                                <div class="mydetails-left">Height</div>
+                                <div class="mydetails-right">1.68</div>
+                                <div class="mydetails-left">Last Online</div>
+                                <div class="mydetails-right">April 5</div>
+                                <div class="mydetails-left">Orientation</div>
+                                <div class="mydetails-right">Straight</div>
+                                <div class="mydetails-left">Height</div>
+                                <div class="mydetails-right">1.68</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- end of profile section -->
+
+            <!-- beginning of right ads - column 3 -->
+            <div class="right-ads">
+                <div class="right-ads-top">
+                    All profits used to save lives <br>
+                    <i class="far fa-heart heart-icon"></i>
+                </div>
+                <div class="right-ads-middle">Learn more</div>
+                <div class="right-ads-botton">
+                    <p class="p1">you&apos;re <b> invisible</b></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe itaque consectetur voluptates
+                        vitae omnis a fugiat nemo facere officiis chuopum.</p>
+                    <button class="gopremium-button">Go Premium</button>
+                </div>
+            </div>
+            <!-- end of right ads -->
+        </div>
+    </div>
+    <!-- end of main grid with 3 columns -->
+
+</body>
+
+</html>

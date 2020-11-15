@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Table 2</title>
+  </head>
+
+  <body>
+    <table border="1">
+
+      <tr>
+        <th colspan="5">Table3 <br><i>Sample Anova Table</i>
+        </th>
+      </tr>
+
+      <tr>
+        <th>Stubhead</th>
+        <th>dF</th>
+        <th><i>F</i></th>
+        <th>n</th>
+        <th><i>p</i></th>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td colspan="2">Column spanner</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <th>Row 1</th>
+        <td>1</td>
+        <td>0.76</td>
+        <td>.55</td>
+        <td>.98</td>
+      </tr>
+
+      <tr>
+        <th>Row 2</th>
+        <td>1</td>
+        <td>0.76</td>
+        <td>.55</td>
+        <td>.98</td>
+      </tr>
+
+      <tr>
+        <th>Row 3</th>
+        <td>1</td>
+        <td>0.76</td>
+        <td>.55</td>
+        <td>.98</td>
+      </tr>
+
+      <tr>
+        <th>Row 4</th>
+        <td>1</td>
+        <td>0.76</td>
+        <td>.55</td>
+        <td>.98</td>
+      </tr>
+
+      <tr>
+        <td colspan="5"></td>
+      </tr>
+
+      <tr>
+        <td colspan="5"><i>Note:</i> This hidhaodhaodh dhsaidhsaoidhao dadoiasdhao daodaihod <br>
+                                     hdiahdhaiodhd oashdoahdo daoidhasoh dodhaidha doaidhaohdio</td>
+      </tr>
+
+    </table>
+
+  </body>
+
+
+
+</html>

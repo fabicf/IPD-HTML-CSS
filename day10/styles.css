@@ -1,0 +1,202 @@
+html {
+  background-color: rgb(236, 236, 236);
+}
+
+body {
+  width: 960px;
+  border: 1.5px solid gray;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* beginning of header navigation styles */
+
+.header-navigation {
+  /* border: 1px solid red; */
+  background-color: gray;
+  padding: 0 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-navigation > div {
+  /* border: 1px solid blue; */
+  padding: 10px;
+}
+
+.search-form {
+  background-color: white;
+  padding: 4px;
+}
+
+.search-form > * {
+  border: none;
+  color: gray;
+  background-color: white;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+}
+.hour {
+  font-size: 2.5rem;
+}
+
+.hour-format {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-left: 0.5rem;
+}
+
+.home-picture {
+  width: 3rem;
+  margin-right: 0.5rem;
+  border: 0.2rem solid white;
+}
+
+.right-home-link {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+/* end of header navigations styles */
+
+/* beginning of botton section styles */
+.bottom-section {
+  /* border: 1px solid blue; */
+  background-color: lavender;
+  padding: 0.5rem;
+}
+
+.info-board {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.border-top-nav-grid {
+  border: 1px solid rgb(241, 240, 240);
+  background-image: linear-gradient(white, lavender);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 2px gray;
+}
+
+.top-nav-grid {
+  display: grid;
+  grid-template-columns: 4rem auto;
+}
+
+.top-nav-grid > div {
+  /* border: 1px solid green; */
+}
+
+.top-nav-grid-picture {
+  grid-row: 1 / 3;
+}
+
+.top-nav-grid-picture > img {
+  width: 3rem;
+  border: 0.2rem solid white;
+  align-items: center;
+}
+
+.top-nav-grid-username {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: blue;
+}
+
+.nav-grid-navbar > nav > a {
+  /* border: 1px solid orange; */
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-grid-navbar > nav > a:hover {
+  border-radius: 1rem;
+  background-color: rgb(203, 203, 250);
+  box-shadow: -1px -1px 2px gray;
+}
+
+/* beginning of main card bottom */
+
+.main-card-bottom {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0 1rem 0;
+}
+
+.big-picture {
+  border: 1px solid lavender;
+  padding: 1.5rem 0.2rem;
+}
+.big-picture img {
+  width: 13rem;
+  border: 0.2rem solid white;
+  box-shadow: 1px 1px 2px gray;
+}
+
+.contact-general-info {
+  /* border: 1px solid red; */
+}
+
+h4 {
+  margin: 0;
+  padding-bottom: 0.4rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 6rem;
+}
+
+.contact-grid > div {
+  padding: 0.3rem 0;
+}
+
+.contact-grid > div > a {
+  text-decoration: none;
+}
+
+.adm-btn {
+  background-color: rgb(102, 176, 245);
+  border: none;
+  border-radius: 0.2rem;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  font-weight: bold;
+}
+
+.actions {
+  border: 1px solid lavender;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  /* width: 10rem; */
+}
+.nav-actions a {
+  display: block;
+  padding: 0.3rem 4rem 0.3rem 0.3rem;
+  margin: 0.1rem;
+  /* border: 1px solid orange; */
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 0.2rem;
+  color: black;
+  background-color: rgb(240, 240, 245);
+}
+
+.nav-actions > a:hover {
+  background-color: lavender;
+  box-shadow: -1px -1px 2px gray;
+}
+/* end of bottom section styles */

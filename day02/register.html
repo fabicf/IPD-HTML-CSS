@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <form method="POST" action="https://www.hashemian.com/tools/form-post-tester.php">
+    <label for="userName">User name </label>
+    <input type="text" name="userNamr" id="userName"><br><br>
+
+    <label for="nameFirstLast">First and last name:</label>
+    <input type="text" name="nameFirstLast" id="nameFirstLast"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email"><br><br>
+
+    <label for="numberSibiling">Number of Sibilings</label>
+    <input type="number" name="numberSibiling" id="numberSibiling"><br><br>
+
+    <label for="userName"><b>Gender:</b></label>
+    <select name="gender" id="gender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select><br><br>
+
+    <b>Age:</b>
+    <input type="radio" name="age" id="ageBelow18" value="below18">
+    <label for="ageBelow18">Below 18</label>
+    <input type="radio" name="age" id="ageBetween18And35" value="between18And35">
+    <label for="ageBetween18And35">Between 18 - 35</label>
+    <input type="radio" name="age" id="ageBetween36And65" value="between36And65">
+    <label for="agebetween36And65">Between 36 - 65</label>
+    <input type="radio" name="age" id="ageAbove65" value="above65">
+    <label for="ageAbove65">Above 65</label>
+    <input type="radio" name="age" id="agePreferNotSay" value="preferNotSay" checked>
+    <label for="agePreferNotSay">Prefer not to say</label><br><br>
+
+    <b>Food Preferences:</b>
+    <label for="foodMeat">Meat</label>
+    <input type="checkbox" id="foodMeat" name="foodMeat" value="true">
+    <label for="foodDiary">Diary</label>
+    <input type="checkbox" id="foodDiary" name="foodDiary" value="true">
+    <label for="foodVegan">Vegan</label>
+    <input type="checkbox" id="foodVegab" name="foodVegan" value="true">
+    <label for="foodKosher">Kosher</label>
+    <input type="checkbox" id="foodKosher" name="foodKosher" value="true">
+    <label for="foodHalal">Halal</label>
+    <input type="checkbox" id="foodHalal" name="foodHalal" value="true">
+    <label for="foodOther">Other</label>
+    <input type="checkbox" id="foodOther" name="foodOther" value="true"><br><br>
+
+    <label for="userPassword">Password:</label>
+    <input type="password" id="userPassword" name="userPassword" required>
+
+    <label for="passwordConfirmation">Confirm Password:</label>
+    <input type="password" id="passwordConfirmation" name="passwordConfirmation" required><br><br>
+
+    <input type="submit" value="Submit this form">
+
+  </form>
+</body>
+
+</html>

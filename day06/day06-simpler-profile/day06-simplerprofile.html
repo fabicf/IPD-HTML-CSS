@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danielle Profile</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            width: 900px;
+            background-image: url(./background.jpeg);
+            padding: 50px 100px;
+        }
+
+        #main {
+
+            font-family: 'Roboto', sans-serif;
+            width: 700px;
+            /* border: 5px solid orange; */
+            padding: 30px;
+            background-color: white;
+
+        }
+
+        .grid-container-top {
+            display: grid;
+            /* border: 1px solid black; */
+            grid-template-columns: 25% auto auto;
+        }
+
+        .item1 {
+            grid-column: 1 / 4;
+            /* border: 1px solid red; */
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 25px;
+            color: rgb(2, 91, 54);
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+
+
+        }
+
+        .logo-img {
+            vertical-align: bottom;
+            color: rgb(2, 91, 54);
+        }
+
+        .item2 {
+            grid-column: 1 / 4;
+            /* border: 1px solid blue; */
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 32px;
+            /* font-weight: bold; */
+            padding: 10px;
+        }
+
+        .item3 {
+            /* border: 1px solid green; */
+            /* align-content: center; */
+            display: flex;
+            padding: 10px;
+            /* justify-content: center; */
+
+        }
+
+        .item4 {
+            grid-column: 2 / 4;
+            /* border: 1px solid red; */
+        }
+
+        .subgrid-container {
+            padding: 20px;
+            /* border: 1px solid blue; */
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+
+        .label-info {
+            color: rgb(180, 180, 180);
+            text-transform: capitalize;
+            text-align: right;
+            padding: 10px 3px;
+        }
+
+        .label-answer {
+            text-transform: capitalize;
+            text-align: left;
+            padding: 10px 3px;
+        }
+
+        .subitem4d,
+        .subitem4p {
+            color: rgb(38, 190, 242);
+        }
+
+        /* hr {
+            color: rgb(180, 180, 180);
+        } */
+
+        .middle-part {
+            padding: 10px;
+
+        }
+
+        .event-button-1 {
+            border-radius: 4px;
+            border: 1px solid rgb(2, 91, 54);
+            background-color: rgb(2, 91, 54);
+            color: white;
+            text-decoration: none;
+            text-decoration-color: none;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+            display: inline-block
+        }
+
+
+        .event-button-2 {
+            border-radius: 4px;
+            border: 1px solid rgb(2, 91, 54);
+            background-color: white;
+            color: rgb(2, 91, 54);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+            display: inline-block
+        }
+
+        .grid-container-botton {
+            display: grid;
+            /* border: 1px solid purple; */
+            grid-template-columns: auto auto auto auto;
+        }
+
+        .botton-part {
+            padding: 10px;
+        }
+
+        .item-grid-botton {
+            padding: 10px 0;
+            display: block;
+            text-align: center;
+            align-self: center;
+        }
+
+        .item5,
+        .item9,
+        .item13 {
+            text-align: left;
+        }
+
+        .button {
+            background-color: rgb(2, 91, 54);
+            color: white;
+            text-transform: uppercase;
+            width: 100px;
+
+            border-radius: 30px;
+            border: none;
+            padding: 4px 8px;
+
+        }
+
+        .webinar {
+            font-size: 80%;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .webinar-link {
+            color: rgb(180, 180, 180);
+            text-decoration: none;
+            text-decoration-color: none;
+            font-size: 80%;
+        }
+
+        /* a:link {
+            color: rgb(180, 180, 180);
+        } */
+
+
+        .botton-icon {
+            color: rgb(180, 180, 180);
+            align-content: center;
+        }
+
+        .permanent {
+            font-size: 80%;
+            text-transform: uppercase;
+            text-align: center;
+
+        }
+
+        .schedule {
+            font-size: 60%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <!-- top part: logo, name, profile image and info (subgrid) -->
+        <div class="top-part">
+            <div class="grid-container-top">
+                <div class="item1">
+                    <span><img src="logo1.png" alt="logo" width="30px" class="logo-img"></span>
+                    <span> your logo</span>
+                </div>
+                <div class="item2">Danielle Bryant</div>
+                <div class="item3"><img src="profile.jpg" alt="profile-picture" width="140px"></div>
+                <div class="item4">
+                    <div class="subgrid-container">
+                        <div class="subitem4a label-info">street:</div>
+                        <div class="subitem4b label-answer">arkonska</div>
+                        <div class="subitem4c label-info">email:</div>
+                        <div class="subitem4d label-answer">johnbryant@domain.com</div>
+                        <div class="subitem4e label-info">region:</div>
+                        <div class="subitem4f label-answer">pomorskie</div>
+                        <div class="subitem4g label-info">phone:</div>
+                        <div class="subitem4h label-answer">+34 111 222 333</div>
+                        <div class="subitem4i label-info">post code:</div>
+                        <div class="subitem4j label-answer">80-790</div>
+                        <div class="subitem4k label-info">country:</div>
+                        <div class="subitem4l label-answer">poland</div>
+                        <div class="subitem4m label-info">city:</div>
+                        <div class="subitem4n label-answer">gdansk</div>
+                        <div class="subitem4o label-info">website:</div>
+                        <div class="subitem4p label-answer">www.daniellebryant.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of top part -->
+        <br>
+        <hr>
+        <br>
+        <!-- middle part: two events bottons/links -->
+        <div class="middle-part">
+            <span id="events1">
+                <a href="#" class="event-button-1"><i class="far fa-calendar-alt"></i> Upcoming Events</a>
+            </span>
+            <span id="events2">
+                <a href="#" class="event-button-2"><i class="far fa-calendar-check"></i> Events on demand</a>
+            </span>
+        </div>
+        <!-- end of middle part -->
+
+        <!-- botton part: info, bottons, links and icons -->
+        <div class="botton-part">
+            <div class="grid-container-botton">
+                <div class="item-grid-botton item5">
+                    <span class="webinar">My webinar</span><br>
+                    <a class="webinar-link"
+                        href="https://www.w3schools.com/css/tryit.asp?filename=trycss_default">https://www.w3schools.com/css/tryit.asp?filename=trycss_default</a>
+                </div>
+                <div class="item-grid-botton item6">
+                </div>
+                <div class="item-grid-botton item7">
+                    <span class="botton-icon"><i class="fas fa-infinity"></i></span><br>
+                    <span class="permanent">Permanent</span>
+                </div>
+                <div class="item-grid-botton item8"><button class="button">join</button></a></div>
+                <div class="item-grid-botton item9">
+                    <span class="webinar">Getting started webinar</span><br>
+                    <a class="webinar-link"
+                        href="https://www.w3schools.com/css/tryit.asp?filename=trycss_default">https://www.w3schools.com/css/tryit.asp?filename=trycss_default</a>
+                </div>
+                <div class="item-grid-botton item10">
+                </div>
+                <div class="item-grid-botton item11">
+                    <span class="botton-icon"><i class="fas fa-infinity"></i></span><br>
+                    <span class="permanent">Permanent</span>
+                </div>
+                <div class="item-grid-botton item12"><button class="button">join</button></div>
+                <div class="item-grid-botton item13">
+                    <span class="webinar">Seven tips for hosting webinar that rock</span><br>
+                    <a class="webinar-link"
+                        href="https://www.w3schools.com/css/tryit.asp?filename=trycss_default">https://www.w3schools.com/css/tryit.asp?filename=trycss_default</a>
+                </div>
+                <div class="item-grid-botton item14">
+                    <span class="botton-icon"> <i class="fas fa-search-dollar"></i></span><br>
+                    <span class="permanent">$30.90</span>
+                </div>
+                <div class="item-grid-botton item15">
+                    <span class="botton-icon"><i class="fas fa-infinity"></i></span><br>
+                    <span class="permanent">Permanent</span><br>
+                    <span class="schedule">04:25 PM UTC+2</span>
+                </div>
+                <div class="item-grid-botton item16"> <button class="button">buy now</button></div>
+            </div>
+        </div>
+        <!-- end of botton part -->
+    </div>
+
+</body>
+
+</html>

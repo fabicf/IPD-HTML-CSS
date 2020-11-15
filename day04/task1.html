@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #firstWord {
+            color: blue;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 150%;
+        }
+
+        #secondWord {
+            text-decoration: underline;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+
+        #thirdWord {
+            font-style: italic;
+            background-color: limegreen;
+            color: gold;
+        }
+
+        .centerText {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>
+        This is some <span id="firstWord">formatted</span>
+        text.
+    </p>
+    <p class="centerText">
+        This text is <span id="secondWord">centered</span>.
+    </p>
+    <p style="text-align: right;">
+        Some <span id="thirdWord">right aligned </span>text.
+    </p>
+
+</body>
+
+</html>

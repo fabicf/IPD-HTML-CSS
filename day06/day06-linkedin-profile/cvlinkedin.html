@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff Weiner LinkedIn</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        #main {
+            width: 820px;
+            background-color: gray;
+            padding: 40px;
+            font-family: sans-serif;
+            color: black;
+            font-size: 0.7rem;
+            margin: auto;
+
+        }
+
+        .main-container-grid {
+            width: 820px;
+            background-color: gray;
+            display: grid;
+            grid-template-columns: 540px 270px;
+            gap: 10px;
+            /* padding: 1rem; padding was applied in each container due different values */
+        }
+
+        .item1 {
+            /* border: 1px solid red; */
+            background-color: white;
+            padding-bottom: 0;
+
+        }
+
+        .item2 {
+            /* border: 1px solid blue; */
+            grid-column: 2 / 3;
+            grid-row: 1 / 4;
+            background-color: white;
+            padding: 0.9rem;
+        }
+
+        .item3 {
+            /* border: 1px solid green; */
+            padding: 1.5rem;
+            background-color: white;
+        }
+
+        .item4 {
+            /* border: 1px solid purple; */
+            background-color: white;
+            padding: 1.5rem;
+        }
+
+        .item1-top {
+            /* padding: 0.9rem 0.9rem 0.9rem 0; */
+        }
+
+        .jeff-picture {
+            width: 160px;
+            float: left;
+            padding: 0.9rem 0;
+        }
+
+        .grid-profile-container {
+
+            display: grid;
+            /* border: 1px solid green; */
+            grid-template-columns: auto auto;
+            padding: 0.9rem;
+            margin: 0;
+        }
+
+        .jeff-name {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .san-francisco {
+            color: gray;
+            font-weight: bold;
+        }
+
+        .influence-icon {
+            grid-column: 2 / 3;
+            grid-row: 1 / 3;
+        }
+
+        .influencer-img {
+            width: 5rem;
+
+        }
+
+        .sub-grid-jobs {
+            /* border: 1px solid hotpink; */
+            display: grid;
+            grid-template-columns: auto auto;
+            line-height: 1rem;
+            font-size: 0.6rem;
+            padding: 1rem 0 0 0;
+
+        }
+
+        .sub-grid-jobs>.job-label {
+            color: gray;
+
+        }
+
+        .bold-subtitle {
+            font-weight: bold;
+        }
+
+        .grid-friends {
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 0.5rem;
+            row-gap: 0.5rem;
+        }
+
+
+
+        .input-button {
+            color: gray;
+            width: 5.5rem;
+            font-size: 0.6rem;
+        }
+
+        .search-icon {
+            color: rgb(2, 127, 185);
+        }
+
+        .linkedin-user-img {
+            width: 3.5rem;
+        }
+
+        .user-jeff-name>a {
+            font-size: 0.6rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: rgb(2, 127, 185);
+
+        }
+
+        .user-jeff-description {
+            font-size: 0.6rem;
+        }
+
+        .side-bar-link {
+            text-decoration: none;
+            color: rgb(2, 127, 185);
+            font-size: 0.6rem;
+        }
+
+
+        .item1-botton {
+            padding: 0.5rem 1.5rem;
+            margin-right: 3rem;
+        }
+
+        .join-linkedin {
+            font-size: 1.3rem;
+
+        }
+
+        .linkedin-member {
+            font-size: 0.8rem;
+        }
+
+        .ul {
+            margin: 0;
+            padding-inline-start: 0;
+            /* why it did not work?? */
+        }
+
+
+        .yellow-button {
+            text-transform: capitalize;
+            font-weight: bold;
+            border-radius: 4px;
+            border: 1px solid orange;
+            background-image: linear-gradient(yellow, gold);
+            text-decoration: none;
+            text-decoration-color: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            text-align: center;
+            /* display: inline-block */
+        }
+
+        .grid-container-publish {
+            display: grid;
+            grid-template-columns: auto auto auto;
+
+        }
+
+        .see-more>a {
+            color: gray;
+            text-decoration: none;
+            font-size: 0.6rem;
+        }
+
+        .random-img {
+            width: 150px;
+        }
+
+        .item3-subtitle>a {
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+            display: block;
+            width: 150px;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="main">
+        <!-- background gray -->
+
+        <div class="main-container-grid">
+            <!-- beginning of item 1 - total -->
+            <div class="item1">
+                <!-- beginninf of item 1 top part -->
+                <div class="item1-top">
+                    <img class="jeff-picture" src="jeff-weiner.jpeg" alt="jeff-picture">
+
+                    <div class="grid-profile-container">
+                        <div class="profile-name">
+                            <span class="jeff-name">Jeff Weiner</span><br>
+                            <span class="linkedin-member">CEO at LinkedIn</span><br>
+                            <span class="san-francisco">San Francisco Bay Area | Internet</span> </div>
+                        <div class="influence-icon"><img class="influencer-img" src="influencer.png"
+                                alt="influencer-img">
+                        </div>
+                        <div class="sub-grid-jobs">
+                            <div class="job-label">Current</div>
+                            <div class="answer-job">LinkedIn, Intuit, DonorsChose</div>
+                            <div class="job-label">Preivous</div>
+                            <div class="answer-job">Accel Partners, Greylock, Yahoo!</div>
+                            <div class="job-label">Recommendations</div>
+                            <div class="answer-job">7 people have recommended <b>Jeff</b></div>
+                            <div class="job-label">Websites</div>
+                            <div class="answer-job">Company websites</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of item 1 top part -->
+                <br><br>
+                <hr>
+                <!--  beggining of item 1 botton -->
+                <div class="item1-botton">
+                    <div class="join-linkedin">Join LinkedIn and access Jeff&apos;s full profile. It&apos;s free!
+                    </div>
+                    <br>
+
+                    <div class="linkedin-member">As a LinkedIn member, you&apos;ll join 400 million other
+                        professionals
+                        who
+                        are sharing connections, ideas and opportunities.</div>
+                    <ul>
+                        <li>See who you know in common</li>
+                        <li>Get introduced</li>
+                        <li>Contact <b>Jeff</b> direct</li>
+                    </ul>
+                    <br>
+                    <span>
+                        <a href="#" class="yellow-button">View Jeff&apos;s full profile</a></span>
+                </div>
+                <!-- end of item 1 botton -->
+            </div>
+            <!-- end of item 1 - total -->
+            <!-- beginning of side menu -->
+            <div class="item2">
+                <div>
+                    <span class="bold-subtitle">Find a different Jeff Weiner</span><br><br>
+
+                    <form method="POST" action="" https://www.hashemian.com/tools/form-post-tester.php">
+                        <input class="input-button" type="text" id="fisrtname" name="firstname"
+                            placeholder="First Name">
+                        <input class="input-button" type="text" id="fisrtname" name="firstname" placeholder="Last Name">
+                        <i class="fas fa-search search-icon"></i>
+                    </form>
+
+
+                    <br>
+                    <span class="user-jeff-description"> <b> Example:</b><a class="side-bar-link" href="#"> Jeff
+                            Weiner</a></span><br>
+
+                    <br>
+                    <br>
+                </div>
+                <div class="friends">
+                    <div class="grid-friends">
+                        <div> <a href="#"> <img class="linkedin-user-img" src="linkedinuser.jpg"
+                                    alt=" linkedin-user"></a></div>
+                        <div>
+                            <span class="user-jeff-name"> <a href="#"> Jeff Weiner</a></span><br>
+                            <span class="user-jeff-description">Director of Human Resources at Venture Tech
+                                Solutions,
+                                Inc</span><br>
+                            <span class="user-jeff-description">United States</span>
+                        </div>
+                        <div> <a href="#"> <img class="linkedin-user-img" src="linkedinuser.jpg"
+                                    alt=" linkedin-user"></a></div>
+                        <div>
+                            <span class="user-jeff-name"> <a href="#"> Jeff Weiner</a></span><br>
+                            <span class="user-jeff-description">Senior Vice President at Fierv</span><br>
+                            <span class="user-jeff-description">United States</span>
+                        </div>
+                        <div> <a href="#"> <img class="linkedin-user-img" src="linkedinuser.jpg"
+                                    alt=" linkedin-user"></a></div>
+                        <div>
+                            <span class="user-jeff-name"> <a href="#"> Jeff Weiner</a></span><br>
+
+                            <span class="user-jeff-description">United States</span>
+                        </div>
+                        <div> <a href="#"> <img class="linkedin-user-img" src="linkedinuser.jpg"
+                                    alt=" linkedin-user"></a></div>
+                        <div>
+                            <span class="user-jeff-name"> <a href="#"> Jeff Weiner</a></span><br>
+                            <span class="user-jeff-description">Racing Development,
+                                Inc</span><br>
+                            <span class="user-jeff-description">United States</span>
+                        </div>
+                        <div> <a href="#"> <img class="linkedin-user-img" src="linkedinuser.jpg"
+                                    alt=" linkedin-user"></a></div>
+                        <div>
+                            <span class="user-jeff-name"> <a href="#"> Jeff Weiner</a></span><br>
+
+                            <span class="user-jeff-description">United States</span>
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+                <span><a class="side-bar-link" href="#"> More professionals named Jeff Weiner</a></span><br><br>
+                <div>
+                    <span class="bold-subtitle">People Also Viewed</span>
+                </div><br>
+                <div class="friends">
+                    <div class="grid-friends">
+                        <div> <a href="#"> <img class="linkedin-user-img" src="linkedinuser.jpg"
+                                    alt=" linkedin-user"></a></div>
+                        <div>
+                            <span class="user-jeff-name"> <a href="#"> Jeff Weiner</a></span><br>
+                            <span class="user-jeff-description">Director of Human Resources at Venture Tech
+                                Solutions,
+                                Inc</span><br>
+                            <span class="user-jeff-description">United States</span>
+                        </div>
+                        <div> <a href="#"> <img class="linkedin-user-img" src="linkedinuser.jpg"
+                                    alt=" linkedin-user"></a></div>
+                        <div>
+                            <span class="user-jeff-name"> <a href="#"> Jeff Weiner</a></span><br>
+                            <span class="user-jeff-description">Senior Vice President at Fierv</span><br>
+                            <span class="user-jeff-description">United States</span>
+                        </div>
+                        <div> <a href="#"> <img class="linkedin-user-img" src="linkedinuser.jpg"
+                                    alt=" linkedin-user"></a></div>
+                        <div>
+                            <span class="user-jeff-name"> <a href="#"> Jeff Weiner</a></span><br>
+
+                            <span class="user-jeff-description">United States</span>
+                        </div>
+                        <div> <a href="#"> <img class="linkedin-user-img" src="linkedinuser.jpg"
+                                    alt=" linkedin-user"></a></div>
+                        <div>
+                            <span class="user-jeff-name"> <a href="#"> Jeff Weiner</a></span><br>
+                            <span class="user-jeff-description">Racing Development,
+                                Inc</span><br>
+                            <span class="user-jeff-description">United States</span>
+                        </div>
+                        <div> <a href="#"> <img class="linkedin-user-img" src="linkedinuser.jpg"
+                                    alt=" linkedin-user"></a></div>
+                        <div>
+                            <span class="user-jeff-name"> <a href="#"> Jeff Weiner</a></span><br>
+
+                            <span class="user-jeff-description">United States</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- end of side menu -->
+
+            <!-- beginning of published by jeff section -->
+            <div class="item3">
+                <span class="linkedin-member">Published by Jeff</span><br>
+                <span class="see-more"> <a href="#">See more &#10148;</a> </span> <br><br>
+                <div class="grid-container-publish">
+                    <div><a href="#"> <img class="random-img" src="random-image.jpg" alt=""> </a>
+
+                    </div>
+                    <div><img class="random-img" src="random-image.jpg" alt=""></div>
+                    <div><img class="random-img" src="random-image.jpg" alt=""></div>
+                    <div>
+                        <span class="item3-subtitle"> <a href="#">
+                                My Interview with Oprah</a></span>
+                        <span class="see-more"> <a href="#"> October, 15, 2015</a></span>
+                    </div>
+                    <div>
+                        <span class="item3-subtitle"> <a href="#">
+                                Always Be Learning: LinkedIn to Acquire lynda.com</a></span>
+                        <span class="see-more"> <a href="#"> October, 15, 2015</a></span>
+                    </div>
+                    <div>
+                        <span class="item3-subtitle"> <a href="#">
+                                How LinkedIn is Helping power the president&apos; tech jobs initiative</a></span>
+                        <span class="see-more"> <a href="#"> October, 15, 2015</a></span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- end of published by jeff section -->
+
+            <!-- beginning of summary section -->
+            <div class="item4 linkedin-member">Summary</div>
+            <!-- end of summary section -->
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
